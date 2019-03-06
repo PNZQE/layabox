@@ -1,0 +1,900 @@
+@charset "utf-8";
+
+@-webkit-keyframes shows{
+  from{
+    top: -100%;
+  }
+  to{
+    top: 0;
+    display: block;
+  }
+}
+
+@keyframes shows{
+  from{
+    top: -100%;
+  }
+  to{
+    top: 0;
+    display: block;
+  }
+}
+
+//导航条
+.nav_navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    
+    .nav_container{
+        width: 85%;
+        
+        .nav_logo{
+            display: flex;
+            display: -webkit-flex;
+            align-items: center;
+            padding: 0;
+            padding-right: 20px;
+        }
+    }
+}
+
+//尾部
+footer{
+    padding-top: 30px;
+    padding-bottom: 35px;
+    padding-left: 17%;
+    padding-right: 17%;
+    background: #3B3B3B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .left{
+        >p{
+            color: #a1a3ab;
+            font-size: 14px;
+            
+            >span{
+                margin-right: 16px;
+                
+                >a{
+                    color: #a1a3ab;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .right{
+        width: 154px;
+        height: 38px;
+        display: flex;
+        
+        .right_block{
+            width: 38px;
+            height: 38px;
+            margin-right: 20px;
+            position: relative;
+            
+            >a{
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background: url("../img/footer.png");
+                
+                img{
+                    width: 145px;
+                    position: absolute;
+                    top: -160px;
+                    left: -50px;
+                    display: none;
+                }
+            }
+            >a:hover{
+                background-position-y: 38px;
+            }
+        }
+        .right_block:nth-of-type(2){
+            >a{
+                background-position-x: -58px;
+            }
+            >a:hover >img{
+              
+                    display: block;
+                
+            }
+        }
+        .right_block:last-of-type{
+            margin-right: 0;
+            >a{
+                background-position-x: -116px;
+            }
+        }
+    }
+}
+
+//banner圆点
+.banner_circle{
+    >li{
+        margin-right: 10px;
+    }
+    >li:last-of-type{
+        margin-right: 0;
+    }
+    >li.active{
+        margin-right: 10px;
+    }
+    >li.active:last-of-type{
+        margin-right: 0;
+    }
+}
+//banner图片
+.carousel-inner{
+    .item{
+        .banner_img{
+            width: 100%;
+        }
+    }
+}
+//LayaFlash引擎
+.engin{
+    padding-top: 105px;
+    padding-bottom: 20px;
+    background: #FBFAF7;
+    border-bottom: 1px solid #EAEAEE;
+    
+    .engin_first{
+        position: relative;
+        z-index: 1;
+        
+        .engin_title{
+            margin-bottom: 35px;
+        }
+        .engin_title+p{
+            font-size: 28px;
+            color: #666666;
+        }
+        .engin_item{
+            display: flex;
+            margin-top: 45px;
+            
+            .engin_item_img{
+                width: 64px;
+                height: 64px;
+                background: #0078D7;
+                border-radius: 8px;
+            }
+            .engin_item_text{
+                margin-left: 15px;
+                width: 210px;
+                
+                >h4{
+                    color: #333333;
+                    margin-top: 0;
+                }
+                >p{
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #666666;
+                }
+            }
+        }
+    }
+    .engin_second{
+        position: relative;
+        z-index: 0;
+        margin-top: 25px;
+    }
+}
+
+//Layabox优势
+.advantage{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    
+    .advantage_first{
+        margin-top: 60px;
+    }
+    .advantage_second{
+        .advantage_title{
+            margin-bottom: 28px;
+        }
+        .advantege_item{
+            display: flex;
+            display: -webkit-flex;
+            align-items: center;
+            width: 100%;
+            padding-left: 6px;
+            margin-top: 16px;
+            
+            .advantege_item_img{
+                width: 54px;
+                height: 54px;
+                border-radius: 50%;
+                background: #8FC31F;
+            }
+            .advantege_item_text{
+                margin-left: 15px;
+                color: #666666;
+                font-size: 14px;
+                >p{
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+//Layabox产品家族
+.product{
+    background: #0079D7;
+    padding-top: 110px;
+    padding-bottom: 120px;
+    
+    .product_title{
+        text-align: center;
+        font-size: 44px;
+        color: white;
+    }
+    .product_ul{
+        padding-left: 18%;
+        padding-right: 14%;
+    }
+    .product_item{
+        display: flex;
+        display: -webkit-flex;
+        color: white;
+        margin-top: 75px;
+        
+        .product_item_text{
+            margin-left: 46px;
+            margin-right: 20px;
+            
+            >h4{
+                margin-top: 0;
+            }
+            >p{
+                line-height: 24px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+//采用Layabox引擎的精彩游戏
+.game{
+    padding-top: 85px;
+    padding-bottom: 40px;
+    .game_title{
+        width: 68%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #2a2a2a;
+        margin-bottom: 40px;
+        >p:first-of-type{
+            font-size: 34px;
+        }
+        >p:last-of-type{
+            >a{
+                color: #2a2a2a;
+                font-size: 14px;
+            }
+        }
+    }
+    .game_first{
+        background-color: #000;
+        margin-right: 20px;
+        .game_video{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .game_second{
+        .game_item{
+            text-align: center;
+            >img{
+                width: 100%;
+            }
+            >p{
+                width: 100%;
+                margin-top: 8px;
+            }
+        }
+        >ul:not(:first-of-type){
+            margin-top: 25px;
+        }
+    }
+}
+
+//合作伙伴
+.partner{
+    background: #F4F4F4;
+    padding-top: 38px;
+    padding-bottom: 60px;
+    padding-left: 17%;
+    padding-right: 17%;
+    
+    .partner_title{
+        color: #2a2a2a;
+        font-size: 30px;
+        
+        >span{
+            color: #777777;
+            font-size: 12px;
+        }
+    }
+    .partner_ul{
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: -30px;
+        .partner_item{
+            padding: 0;
+            padding-right: 14px;
+            >img{
+                border: 1px solid #DDDDDD;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+//Laya家族页面
+//LayaFlash
+.layaflash{
+    padding-top: 60px;
+    padding-bottom: 90px;
+    background: #8BC01F;
+    
+    .layaflash_first{
+        color: white;
+        .layaflash_title{
+            >p{
+                font-size: 22px;
+            }
+            >p:first-of-type{
+                font-size: 48px;
+                margin-bottom: 10px;
+                
+                >span{
+                    display: inline-block;
+                    width: 56px;
+                    height: 56px;
+                    line-height: 56px;
+                    background: white;
+                    color: #8BC01F;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-right: 10px;
+                }
+            }
+            >p:last-of-type{
+                margin-bottom: 45px;
+            }
+        }
+        .layaflash_content{
+            margin-bottom: 25px;
+            >p{
+                font-size: 14px;
+                line-height: 28px;
+                margin-bottom: 15px;
+            }
+        }
+        .layaflash_button{
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            background: #EBF2D2;
+            border-radius: 4px;
+            text-align: center;
+            
+            a{
+                color: #8BC01F;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+//LayaPlayer
+.layaplayer{
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background: #3393DF;
+    color: white;
+    
+    .layaplayer_title{
+        >p:first-of-type{
+            font-size: 48px;
+            margin-bottom: 10px;
+            
+            >span{
+                display: inline-block;
+                width: 56px;
+                height: 56px;
+                line-height: 56px;
+                background: white;
+                font-weight: bold;
+                color: #3393DF;
+                text-align: center;
+                margin-right: 10px;
+            }
+        }
+    }
+    .layaplayer_second{
+        padding-left: 0;
+        padding-right: 0;
+        .layaplayer_content{
+            margin-top: 7%;
+            >p{
+                font-size: 14px;
+                line-height: 30px;
+            }
+            >p:first-of-type{
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            >p:last-of-type{
+                margin-bottom: 30px;
+            }
+        }
+        .layaplayer_img:first-of-type{
+            >img{
+                float: right;
+            }
+        }
+        .layaplayer_img:last-of-type{
+            margin-top: 12%;
+        }
+    }
+}
+
+//LayaAir和LayaOpen
+.layaair{
+    padding-top: 80px;
+    .layaair_title{
+        >p:first-of-type{
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #3393df;
+            
+            >span{
+                display: inline-block;
+                width: 56px;
+                height: 56px;
+                line-height: 56px;
+                background: #3393df;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+                margin-right: 10px;
+            }
+        }
+    }
+    .layaair_content{
+        color: #5d5d5d;
+        font-size: 14px;
+        line-height: 30px;
+        text-indent: 2em;
+        
+        >p:first-of-type{
+            font-size: 18px;
+            text-indent: 0;
+            margin-bottom: 20px;
+        }
+        >p:last-of-type{
+            >img{
+                margin: 0 auto;
+            }
+        }
+        >.layaair_content_title{
+            font-size: 18px;
+            color: #3393df;
+            text-indent: 0;
+        }
+    }
+}
+.layaair_pc{
+    .row_icon{
+        padding-bottom: 80px;
+        
+        p{
+            >img{
+                margin: 0 auto;
+            }
+        }
+    }
+    .row:nth-of-type(3){
+        padding-top: 80px;
+    }
+    .row:nth-of-type(3),.row:nth-of-type(4){
+        background: #F7F7F7;
+    }
+}
+.layaair_phone{
+    display: none;
+    
+    .row:nth-of-type(2){
+        background: #F7F7F7;
+        padding-bottom: 80px;
+    }
+}
+
+//Laya游戏
+.hotgame{
+    padding-top: 32px;
+    .hotgame_first_phone{
+        display: none;
+        .hotgame_first_icon{
+            width: 40px;
+            height: 100px;
+            background: url("../img/hot-icon.png") no-repeat;
+            margin-top: -32px;
+            margin-bottom: 10px;
+            
+            >p{
+                -webkit-writing-mode: vertical-rl;
+                writing-mode: tb-rl;
+                font-size: 20px;
+                color: white;
+                padding-top: 20px;
+                margin: 0 auto;
+                letter-spacing: 10px;
+            }
+        }
+    }
+    .hotgame_first{
+        position: relative;
+        .hotgame_first_icon{
+            width: 40px;
+            height: 100px;
+            background: url("../img/hot-icon.png") no-repeat;
+            position: absolute;
+            top: -32px;
+            left: 0;
+            
+            >p{
+                -webkit-writing-mode: vertical-rl;
+                writing-mode: tb-rl;
+                font-size: 20px;
+                color: white;
+                padding-top: 20px;
+                margin: 0 auto;
+                letter-spacing: 10px;
+            }
+        }
+    }
+    .hotgame_second{
+        >p{
+            font-size: 12px;
+            color: #898989;
+            text-align: right;
+            line-height: 30px;
+        }
+        .hotgame_title{
+            font-size: 26px;
+            color: #2a2a2a;
+        }
+        .hotgame_item{
+            margin-bottom: 28px;
+            >img{
+                border-radius: 8px;
+                margin: 0 auto;
+            }
+            >img:hover{
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        }
+    }
+    .hotgame_row_even{
+        margin-top: 30px;
+        .hotgame_second{
+            >p{
+                text-align: left;
+            }
+        }
+    }
+}
+
+.game_case{
+    padding-left: 17%;
+    padding-right: 17%;
+    margin-top: 30px;
+    
+    .game_case_title{
+        color: #010101;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .game_case_item{
+        margin-bottom: 44px;
+        overflow: hidden;
+        
+        >p{
+            color: #2A2A2A;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 14px;
+        }
+        .game_case_item_img{
+            position: relative;
+            
+            .game_case_item_intro{
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+                position: absolute;
+                left: 0;
+                top: -100%;
+                overflow: hidden;
+                display: none;
+                
+                >p{
+                    padding: 10px;
+                    font-size: 12px;
+                    color: rgba(255,255,255,0.8);
+                }
+            }
+        }
+        .game_case_item_img:hover{
+            cursor: pointer;
+            .game_case_item_intro{
+                display: block;
+                animation: shows 0.8s forwards;
+            }
+        }
+    }
+}
+
+.news{
+    margin-top: 40px;
+    .news_title{
+        font-size: 28px;
+        color: #ff6b08;
+        margin-bottom: 38px;
+    }
+    .news_item{
+        height: 180px;
+        position: relative;
+        margin-bottom: 90px;
+        >img{
+            width: 100%;
+            height: 100%;
+            border: 1px solid #EEEEEE;
+        }
+        >img:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+        .news_item_intro{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            
+            >p{
+                background: rgba(0,0,0,0.5);
+                padding: 13px 8px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-bottom: 0;
+                
+                >a{
+                    color: white;
+                    font-size: 14px;
+                }
+                >a:hover{
+                    color: #25B6A0;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .news_list{
+        border-bottom: 1px dashed #EEEEEE;
+        >.row{
+            margin-bottom: 30px;
+        }
+        >.row:last-of-type{
+            margin-bottom: 60px;
+        }
+        .news_list_a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .news_list_img{
+            padding: 4px;
+            border: 1px solid #EEEEEE;
+            border-radius: 4px;
+            
+            >img{
+                width: 100%;
+            }
+            >img:hover{
+                opacity: 0.8;
+                cursor: pointer;
+            }
+        }
+        .news_list_intro{
+            >p{
+                font-size: 14px;
+                color: rgba(42,42,42,0.8);
+                margin-bottom: 16px;
+            }
+            .news_list_intro_title{
+                font-size: 18px;
+            }
+            .news_list_intro_title:hover{
+                color: #ff6900;
+            }
+            .news_list_intro_buttom{
+                float: right;
+                width: 98px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border-radius: 98px;
+                border: 1px solid #ff6900;
+                text-align: center;
+                color: #ff6900;
+                letter-spacing: 1px;
+            }
+            .news_list_intro_buttom:hover{
+                color: white;
+                background: #ff6900;
+            }
+        }
+    }
+    .page{
+        text-align: center;
+        margin-top: 20px;
+        
+        .page_ul{
+            >li{
+                >a{
+                    color: rgba(42,42,42,0.8);
+                    font-size: 12px;
+                    border: 1px solid #EEEEEE;
+                    letter-spacing: 1px;
+                }
+                >a:hover{
+                    color: white;
+                    background: #E34637;
+                }
+                >a:focus{
+                    color: rgba(42,42,42,0.8);
+                    background: white;
+                }
+            }
+            >.active{
+                >a{
+                    color: white;
+                    background: #E34637;
+                }
+            }
+        }
+    }
+}
+
+.about_company{
+    margin-top: 90px;
+    margin-bottom: 54px;
+    .about_company_title{
+        color: #2A2A2A;
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 26px;
+    }
+    .about_company_intro{
+        color: #2A2A2A;
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+    .about_company_content{
+        >p{
+            color: rgba(42,42,42,0.8);
+            font-size: 14px;
+            line-height: 30px;
+            text-indent: 2em;
+        }
+    }
+}
+.about_invite{
+    padding-top: 110px;
+    padding-bottom: 80px;
+    margin-bottom: 40px;
+    background: #8cc11f;
+    
+    p{
+        color: rgba(255,255,255,0.8);
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .about_invite_title{
+        color: white;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: bold;
+        margin-bottom: 58px;
+    }
+    .about_invite_email{
+        width: 220px;
+        color: #8cc11f;
+        background: white;
+        border-radius: 8px;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: bold;
+    }
+}
+.about_invite_list{
+    .about_invite_list_block{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 52px;
+        margin-top: 70px;
+        border-bottom: 1px solid #D2D2D2;
+        
+        .about_invite_list_maintitle{
+            font-size: 26px;
+            color: #8cc11f;
+            margin-bottom: 40px;
+        }
+        .invite_list_block_intro{
+            .invite_list_block_title{
+                font-size: 18px;
+                color: #2A2A2A;
+                margin-bottom: 15px;
+            }
+            >ol{
+                list-style: decimal;
+                margin-left: 2em;
+                
+                >li{
+                    font-size: 14px;
+                    color: #2A2A2A;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .about_invite_list_block:last-of-type{
+        border-bottom: none;
+        padding-bottom: 70px;
+    }
+}
+.about_link{
+    background: #F4F4F4;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    .about_link_title{
+        font-size: 32px;
+        color: #2a2a2a;
+        margin-bottom: 36px;
+        font-weight: bold;
+    }
+    .about_link_block{
+        padding-right: 28px;
+        .about_link_block_content{
+            padding: 12px 25px;
+            border: 1px solid #E3E3E3;
+            background: white;
+            border-radius: 4px;
+            margin-bottom: 18px;
+            display: flex;
+            >img{
+                display: inline-block;
+                padding: 0;
+            }
+            >p{
+                margin: auto;
+                margin-left: 10px;
+                padding: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>LayaBox游戏</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap_v3.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+	</head>
+
+	<body>
+		<div class="web">
+			<!--导航条-->
+			<nav class="navbar navbar-default navbar-inverse nav_navbar">
+				<div class="container-fluid nav_container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+						<a class="navbar-brand nav_logo" href="#">
+							<img src="img/logo.png" class="img-responsive" />
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="family.html">Laya家族</a>
+							</li>
+							<li class="active">
+								<a href="#">游戏<span class="sr-only">(current)</span></a>
+							</li>
+							<li>
+								<a href="news.html">新闻动态</a>
+							</li>
+							<li>
+								<a href="#">开发者中心</a>
+							</li>
+							<li>
+								<a href="#">开发者社区</a>
+							</li>
+							<li>
+								<a href="#">开放平台</a>
+							</li>
+							<li>
+								<a href="about.html">关于我们</a>
+							</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">中文</a>
+									</li>
+									<li>
+										<a href="#">English</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			
+			<!--banner轮播图-->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators banner_circle">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/game-slider-01.jpg" class="banner_img" />
+					</div>
+					<div class="item">
+						<img src="img/game-slider-02.jpg" class="banner_img" />
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+			<!--Laya游戏热门-->
+			<div class="container-fluid hotgame">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-sm-offset-2 hotgame_first_phone">
+						<div class="hotgame_first_icon">
+							<p>热门</p>
+						</div>
+					</div>
+					<div class="hidden-xs col-sm-3 col-sm-offset-2 hotgame_first">
+						<img src="img/game_bg_02.png" class="img-responsive" />
+						<div class="hotgame_first_icon">
+							<p>热门</p>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 hotgame_second">
+						<p class="hotgame_title">猎刃2</p>
+						<p> 2015年Q版魔幻手游诚心之作，超魔幻ARPG之作！！！无可挑剔的简单操作，无与伦比的爽快打击感，无处不在的惊喜！无穷无尽的回忆！全部技能100%还原，高清华丽特效，体验视觉盛宴；超写实画风，完美重现经典副本；让我们一起来，挑战恶魔，乱斗魔兽！</p>
+						<ul class="row">
+							<li class="col-xs-6 col-sm-6 hotgame_item">
+									<img src="img/1449473646987380.jpg" class="img-responsive"/>
+							</li>
+							<li class="col-xs-6 col-sm-6 hotgame_item">
+									<img src="img/1449473656341243.jpg" class="img-responsive"/>
+							</li>
+							<li class="col-xs-6 col-sm-6 hotgame_item">
+									<img src="img/1449473665625957.jpg" class="img-responsive"/>
+							</li>
+							<li class="col-xs-6 col-sm-6 hotgame_item">
+									<img src="img/1448711007781991.jpg" class="img-responsive"/>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="row hotgame_row_even">
+					<div class="col-xs-12 col-sm-5 col-sm-offset-2 hotgame_second">
+						<p class="hotgame_title">上吧主公</p>
+						<p> 《上吧主公》是一款以三国为背景Q版卡牌游戏，游戏与普通三国题材不同，它以萌萌哒猫咪为三国众名将构筑出别具一格的游戏世界观。画面Q萌，技能华丽炫酷，集养成 、 收集 、策略 、卡牌于一体。三国初始群雄争霸，奇妙的名将会帮你掌握胜算左右战况。</p>
+						<ul class="row">
+							<li class="col-xs-6 col-sm-6 hotgame_item">
+									<img src="img/1449475125524497.jpg" class="img-responsive"/>
+							</li>
+							<li class="col-xs-6 col-sm-6 hotgame_item">
+									<img src="img/1449475113979819.jpg" class="img-responsive"/>
+							</li>
+							<li class="col-xs-6 col-sm-6 hotgame_item">
+									<img src="img/1449475097365981.jpg" class="img-responsive"/>
+							</li>
+							<li class="col-xs-6 col-sm-6 hotgame_item">
+									<img src="img/1449025042590541.jpg" class="img-responsive"/>
+							</li>
+						</ul>
+					</div>
+					<div class="hidden-xs col-sm-3 hotgame_first">
+						<img src="img/game_bg_01.png" class="img-responsive" />
+					</div>
+				</div>
+			</div>
+			
+			<!--Laya游戏更多案例-->
+			<div class="container-fluid game_case">
+				<p class="game_case_title">更多案例</p>
+				<ul class="row">
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+							<img src="img/1448711275495130.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《醉西游》是一款以西游记题材为背景的ARPG游戏，采用Layabox引擎开发，唯美的画面、音乐悠扬，极具神话感；流畅的战斗，有趣的剧情、炫酷的职业、华丽的技能、神秘的副本、激烈的仙战……</p>
+							</div>
+						</div>
+						<p>醉西游</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1445781266689695.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《魔卡幻想》 是由全球知名的手机游戏研发商iFree Studio呕心沥血开发之作。该游戏采用Layabox引擎，精美的画风、简单的操作、丰富的玩法、多样化的卡牌搭配。</p>
+							</div>
+						</div>
+						<p>魔卡幻想</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449476978942516.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《超能战队》是一款集合动作策略和角色扮演的网络游戏，游戏的核心主要以培养队长和将领为主，同时结合了SLG和RPG的成长体系。采用Layabox引擎开发。</p>
+							</div>
+						</div>
+						<p>超能战队</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1445781097892921.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《轰三国》是一款采用Layabox引擎开发的SLG游戏，游戏中玩家可以选择扮演弓箭兵，步兵，骑兵的主公，通过处理日常事务实施招募武将并训练，研究技能，收取税收等指令增强实力，带领部队一统天下！</p>
+							</div>
+						</div>
+						<p>轰三国</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1448710962936495.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《刀塔大菠萝》是一款以欧美神话为背景的卡牌游戏，讲述了冒险者在某神秘大陆上的探险故事。采用Layabox引擎开发，游戏画风可爱，操作轻松，副本丰富，更有数量庞大功能多样的卡牌系统以及深度战斗策略性。</p>
+							</div>
+						</div>
+						<p>刀塔大菠萝</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1448862166573514.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《迷你猎人》是一款探索式RPG卡牌游戏，采用Layabox引擎开发。游戏以著名动漫《全职猎人》 作为背景，融合了多种新的元素，从玩法到画面表现以及耐玩性上都有了全新的突破。</p>
+							</div>
+						</div>
+						<p>迷你猎人</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1445781183162355.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《萌挂三国》是一款创新玩法的卡牌类游戏，采用Layabox引擎开发。颠覆了传统的卡牌模式，完整的装备系统，不同属性的武将，搭配着上百种拽炫酷的装备，这一切都让卡牌游戏变得不再枯燥且更有乐趣！</p>
+							</div>
+						</div>
+						<p>萌挂三国</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449025078167894.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《战争之门》是采用layabox引擎开发的新一代战争策略手游，将排兵布阵、兵种进阶、兵种相克演绎的淋漓尽致，超强搭配挑战玩家策略极限；通过单人竞技、组队混战、天梯排位等，体验超爽PK激战无限；</p>
+							</div>
+						</div>
+						<p>战争之门</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1448862365599311.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《英雄争霸》是一款以魔幻Q版风格的回合战棋游戏，采用Layabox引擎开发，玩家可以雇佣来自各个种族的英雄一起挑战极具特色的BOSS，还能在线和其他玩家来一场剑与魔法的战斗。</p>
+							</div>
+						</div>
+						<p>英雄争霸</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1448970577815762.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《二战传奇》是一款卡牌SLG游戏，采用Layabox引擎开发，以二战时期的宏伟世界为整个游戏的背景。战斗画面简练且不失精彩，技能系统简约而不简单，操作手感畅快淋漓，玩家将与自己的角色一起经历乱世，成就一番霸业。</p>
+							</div>
+						</div>
+						<p>二战传奇</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449024632900176.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《龙吟三国》是一款RPG类型的三国题材游戏，采用Layabox引擎研发，这里有你喜爱的三国名将，骑上你的战马，踏上这群雄争霸的三国之世！</p>
+							</div>
+						</div>
+						<p>龙吟三国</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449475033640275.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《哟狐狸精》是一款采用Layabox引擎开发的角色扮演游戏，引经据典，取材自妲己祸世纣王暴政，姜子牙寻找天命之人助周王伐纣的故事，游戏剧情跌宕起伏，游戏画面精致唯美，游戏玩法丰富多彩，游戏活动层出不穷！</p>
+							</div>
+						</div>
+						<p>哟狐狸精</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449487618343671.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《熊来啦》是一款改良的match 3类游戏，采用Layabox引擎开发。玩家在游戏中的目的就是将三个相同物品连到一起，当物品连到一起是就会变成更高阶的物品，同时还能获得游戏分数。</p>
+							</div>
+						</div>
+						<p>熊来啦</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1445781290642012.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《我爱我家》是一款超有爱的家居装扮类游戏，采用Layabox引擎开发！才华横溢的设计师们都在这里欢聚一堂！客厅欧美范，卧室小清新，厨房田园风……想怎么混搭就怎么混搭！你的地盘你做主！型男萝莉御姐正太加萌宠，总有一款你最爱！</p>
+							</div>
+						</div>
+						<p>我爱我家</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449024989678035.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《夺塔三国》是采用Layabox引擎开发的三国塔防动作游戏！三国群英传奇，展露豪侠本性！沙场名将无双，成就乱世霸业！便捷的操作，华丽的技能，绚丽的场景，独特的造型，让您的战斗快淋漓又变幻莫测。</p>
+							</div>
+						</div>
+						<p>夺塔三国</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449487782878473.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《西游快跑》是一款Q版娱乐类型的竞猜游戏，采用Layabox引擎开发，游戏操作简单、易上手，画面简洁清爽。丰富多彩的西游人物，让你感觉腾云驾雾般的享受，手指轻轻点击即可进行游戏。</p>
+							</div>
+						</div>
+						<p>西游快跑</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449576752718244.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《德州扑克》是采用Layabox引擎开发的棋牌游戏，采用经典的德州扑克玩法，是头脑的较量，智者的对决！游戏免费，金币狂送！无需下载，打开即玩！</p>
+							</div>
+						</div>
+						<p>德州扑克</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1452242709170717.png" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p> 《魔神快打》是一款横版动作在线网页游戏，游戏中玩家扮演的是名为训练师的隐性角色，自身并不出战，而是作为英雄的召唤师在背后支持。 游戏以所罗门七十二魔神降世为线索，玩家需要与邪恶组织战斗，挫败他们的召唤魔神计划，最终驱逐魔神。</p>
+							</div>
+						</div>
+						<p>魔神快打</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449480093386784.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《鬼吹灯H5》是一款盛大文学小说《鬼吹灯》正版授权的H5游戏。该游戏采用Layabox引擎开发，核心玩法是一群摸金校尉在古墓里和各种怪物作战的历险体验。游戏同时设定了和其他盗墓者们进行争夺和火拼的竞争生存主线，为玩家提供了大量符合小说设定的装备和人物养成过程。</p>
+							</div>
+						</div>
+						<p>鬼吹灯</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449477510961384.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《挂机三国》是首款Q版三国题材挂机类游戏，采用Layabox引擎开发，以挂机诠释经典!史上最懒游戏，适合不能长期坚守电脑的玩家，特别适合上班族；游戏玩法大胆创新，突破传统限制，游戏画面精美，操作简单，玩法多样!</p>
+							</div>
+						</div>
+						<p>挂机三国</p>
+					</li>
+					<li class="col-xs-6 col-sm-4 game_case_item">
+						<div class="game_case_item_img">
+						<img src="img/1449480490476231.jpg" class="img-responsive"/>
+							<div class="game_case_item_intro">
+								<p>《三国仙侠传》是以三国故事为背景的Q版游戏，采用Layabox引擎开发，清新的画风、丰富的剧情令人沉醉其中。更有炫酷可爱的幻灵、清新Q萌的佳人伴你成长，而考验策略的国战更能带给你掌握天下的快感。在这斗智斗勇的三国世界，看何方英雄主宰天下！</p>
+							</div>
+						</div>
+						<p>三国仙侠传</p>
+					</li>
+				</ul>
+			</div>
+			
+			<!--尾部-->
+			<footer>
+				<div class="left">
+					<p>
+						<span><a href="###">公司简介</a></span>
+						<span><a href="###">联系方式</a></span>
+						<span><a href="###">人才招聘</a></span>
+					</p>
+					<p>All Copyright Reserved by Layabox Inc. 京ICP备15008163号-1</p>
+				</div>
+				<div class="right">
+					<div class="right_block"><a href="###"></a></div>
+					<div class="right_block">
+						<a href="###">
+							<img src="img/weixin.png" />
+						</a>
+					</div>
+					<div class="right_block"><a href="###"></a></div>
+				</div>
+			</footer>
+		</div>
+		
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="UTF-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="UTF-8"></script>
+		<!--<script type="text/javascript">
+			//遮罩效果
+			$(function() {
+				$(".game_case_item_img").hover(function() {
+					$(this).find(".game_case_item_intro").stop().animate({
+						"left": 0
+					});
+				}, function() {
+					var itemWidth = $(this).width();
+					$(this).find(".game_case_item_intro").stop().animate({
+						"left": - +itemWidth
+					});
+				})
+			});
+		</script>-->
+	</body>
+</html>

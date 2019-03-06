@@ -1,0 +1,337 @@
+@media only screen and (min-width: 768px) {
+    html,body {
+        min-width: 1100px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    footer{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        .right{
+            display: none;
+        }
+    }
+    .banner_circle{
+        bottom: 0;
+    }
+    .engin{
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        .engin_first{
+            .engin_title{
+                width: 50%;
+                margin: 0 auto;
+                margin-bottom: 29px;
+            }
+            .engin_title+p{
+                font-size: 18px;
+            }
+            .engin_item{
+                margin-top: 20px;
+                
+                .engin_item_text{
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .advantage{
+        padding-bottom: 30px;
+        .advantage_first{
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .advantage_second{
+            .advantage_title{
+                width: 50%;
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+            .advantege_item{
+                margin-top: 25px;
+            }
+        }
+    }
+    .product{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+        .product_title{
+            font-size: 26px;
+        }
+        .product_ul{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .product_item{
+            display: block;
+            margin-top: 60px;
+            
+            .product_item_img{
+                text-align: center;
+            }
+            .product_item_text{
+                margin-left: 15px;
+                margin-top: 25px;
+                width: 93%;
+                
+                >h4{
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+    .game{
+        padding-top: 30px;
+        .game_title{
+            width: 100%;
+            margin-bottom: 20px;
+            >p:first-of-type{
+                font-size: 18px;
+            }
+        }
+        .game_second{
+            >ul{
+                margin-top: 0 !important;
+                .game_item{
+                    margin-top: 15px;
+                    
+                    >img{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+    .partner{
+        padding-left: 0;
+        padding-right: 0;
+        .partner_title{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .partner_ul{
+            margin-right: 0;
+            margin-left: 15px;
+            margin-top: 0;
+            .partner_item{
+                margin-top: 20px;
+            }
+            .partner_item:last-of-type{
+                padding-right: 14px;
+            }
+        }
+    }
+    .layaflash{
+        padding-bottom: 40px;
+        .layaflash_first{
+            .layaflash_title{
+                >p:first-of-type{
+                    font-size: 40px;
+                    
+                    >span{
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+        .layaflash_second{
+            margin-top: 20px;
+        }
+    }
+    .layaplayer{
+        padding-bottom: 40px;
+        
+        .layaplayer_title{
+            >p:first-of-type{
+                font-size: 40px;
+                
+                >span{
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                }
+            }
+        }
+        .layaplayer_second{
+            .layaplayer_img:last-of-type{
+                margin-top: 0;
+            }
+        }
+    }
+    .layaair_pc{
+        display: none;
+    }
+    .layaair_phone{
+        display: block;
+        .layaair{
+            padding-bottom: 0;
+        }
+        .row:last-of-type{
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+    }
+    .layaair{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+        .layaair_title{
+            >p:first-of-type{
+                font-size: 40px;
+                
+                >span{
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                }
+            }
+        }
+        
+        .layaair_block{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    .hotgame{
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        .hotgame_first_phone{
+            display: block;
+        }
+        .hotgame_first{
+            display: none;
+        }
+        .hotgame_second{
+            >p{
+                text-align: justify;
+            }
+            .hotgame_title{
+                text-align: center;
+            }
+        }
+        .hotgame_row_even{
+            margin-top: 10px;
+            .hotgame_second{
+                .hotgame_title{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .game_case{
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        .game_case_item{
+            margin-bottom: 10px;
+            
+            .game_case_item_img:hover{
+                cursor: pointer;
+                opacity: 0.8;
+                
+                .game_case_item_intro{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    .news{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 20px;
+        
+        .news_title{
+            margin-bottom: 18px;
+        }
+        .news_item{
+            height: 80px;
+            margin-bottom: 30px;
+            
+            .news_item_intro{
+                display: none;
+            }
+        }
+        .news_list{
+            border-bottom: 2px dashed #EEEEEE;
+            >.row{
+                margin-bottom: 12px;
+            }
+            >.row:last-of-type{
+                margin-bottom: 20px;
+            }
+            .news_list_intro{
+                >p{
+                    margin-bottom: 6px;
+                }
+                .news_list_intro_title{
+                    font-size: 16px;
+                }
+                .news_list_intro_content{
+                    display: none;
+                }
+                .news_list_intro_buttom{
+                    display: none;
+                }
+            }
+        }
+        .page{
+            margin-top: 0;
+            margin-left: -15px;
+            margin-right: -15px;
+            
+                .page_ul{
+                >li{
+                    >a{
+                        color: rgba(42,42,42,0.8);
+                        font-size: 12px;
+                        border: 1px solid #EEEEEE;
+                        letter-spacing: 1px;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .about_company{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .about_invite{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+        
+        .about_invite_title{
+            margin-bottom: 10px;
+        }
+        .about_invite_second{
+            margin-top: 20px;
+        }
+    }
+    .about_invite_list{
+        .about_invite_list_col{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .about_invite_list_block{
+            margin-top: 30px;
+            padding-bottom: 20px;
+            
+            .about_invite_list_maintitle{
+                margin-bottom: 20px;
+            }
+        }
+        .about_invite_list_block:last-of-type{
+            padding-bottom: 30px;
+        }
+    }
+}
